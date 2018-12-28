@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="example">Hello there!</string>
+    <string name="asdasd"><![CDATA[<sender>John Smith</sender>]]></string>
+    <string name="text">vertical text</string>
+    <string name="result_hint">Here\'s going to be calculus result</string>
+
+    <array name="asd">
+        <item>asd</item>
+    </array>
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Мое приложение</string>
+    <string name="example">Првиет!</string>
+    <string name="asdasd">Скучно</string>
+    <string name="text">вертикальный текст</string>
+    <string name="result_hint">Here\'s going to be calculus result</string>
+</resources>
