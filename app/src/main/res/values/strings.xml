@@ -8,5 +8,8 @@
     <array name="asd">
         <item>asd</item>
     </array>
+    <string name="title_activity_image_load">ImageLoadActivity</string>
+    <string name="image_url">Image url</string>
+    <string name="load">Load</string>
 
 </resources>

@@ -1,7 +1,9 @@
 package com.sit.myfirstapp;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +30,8 @@ public class FactorialActivity extends AppCompatActivity {
 
         result = findViewById(R.id.result);
         input = findViewById(R.id.input);
+//        input = null;
+        Log.d("TAG", "input " + input.toString());
         progress = findViewById(R.id.progress);
         btnFastFactorial = findViewById(R.id.btnFastFactorial);
 
