@@ -11,5 +11,7 @@
     <string name="title_activity_image_load">ImageLoadActivity</string>
     <string name="image_url">Image url</string>
     <string name="load">Load</string>
+    <string name="compass_screen">Compass screen</string>
+    <string name="sensors_screen">Sensors screen</string>
 
 </resources>

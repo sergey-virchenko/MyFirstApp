@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sit.myfirstapp">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,19 +13,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity
-            android:name=".asynk.ImageLoadActivity"
-            android:label="@string/title_activity_image_load"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".sensors.CompassActivity" />
+        <activity android:name=".sensors.SensorTestActivity" />
+        <activity
+            android:name=".asynk.ImageLoadActivity"
+            android:label="@string/title_activity_image_load"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity" />
         <activity android:name=".AnotherActivity" />
-        <activity android:name=".FactorialActivity"></activity>
+        <activity android:name=".FactorialActivity" />
     </application>
 
 </manifest>
