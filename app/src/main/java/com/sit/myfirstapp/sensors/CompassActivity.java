@@ -1,6 +1,7 @@
 package com.sit.myfirstapp.sensors;
 
 import android.content.Context;
+import android.content.IntentFilter;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;

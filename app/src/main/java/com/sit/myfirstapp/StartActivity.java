@@ -15,8 +15,10 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        findViewById(R.id.compass).setOnClickListener(v -> startActivity(new Intent(StartActivity.this, CompassActivity.class)));
-        findViewById(R.id.sensors).setOnClickListener(v -> startActivity(new Intent(StartActivity.this, SensorTestActivity.class)));
+        startService(new Intent(this, MyService.class));
+
+        findViewById(R.id.compass).setOnClickListener(v -> startActivity(new Intent(this, CompassActivity.class)));
+        findViewById(R.id.sensors).setOnClickListener(v -> startActivity(new Intent(this, SensorTestActivity.class)));
 
     }
 }
