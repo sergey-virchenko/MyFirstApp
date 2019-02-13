@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.util.AttributeSet;
 import android.view.View;
 
 public class MyCompassView extends View {
@@ -16,13 +17,25 @@ public class MyCompassView extends View {
         init();
     }
 
+    public MyCompassView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public MyCompassView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
+
     private void init() {
         paint = new Paint();
         paint.setAntiAlias(true);
         paint.setStrokeWidth(2);
         paint.setTextSize(25);
         paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(Color.WHITE);
+        paint.setColor(Color.BLACK);
+        setWillNotDraw(false);
     }
 
     @Override

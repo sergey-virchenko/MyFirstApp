@@ -25,8 +25,8 @@ public class CompassActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        compassView = new MyCompassView(this);
-        setContentView(compassView);
+        setContentView(R.layout.activity_compass);
+        compassView = findViewById(R.id.compass_view);
 
         sensorService = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorService.getDefaultSensor(Sensor.TYPE_ORIENTATION);
