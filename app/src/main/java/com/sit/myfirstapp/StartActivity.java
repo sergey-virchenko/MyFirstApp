@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.sit.myfirstapp.fragments.DynamicActivity;
+import com.sit.myfirstapp.fragments.FragmentActivity;
 import com.sit.myfirstapp.sensors.CompassActivity;
 import com.sit.myfirstapp.sensors.SensorTestActivity;
 
@@ -19,6 +21,7 @@ public class StartActivity extends AppCompatActivity {
 
         findViewById(R.id.compass).setOnClickListener(v -> startActivity(new Intent(this, CompassActivity.class)));
         findViewById(R.id.sensors).setOnClickListener(v -> startActivity(new Intent(this, SensorTestActivity.class)));
-
+        findViewById(R.id.fragments).setOnClickListener(v -> startActivity(new Intent(this, FragmentActivity.class)));
+        findViewById(R.id.dynamic_fragments).setOnClickListener(v -> startActivity(new Intent(this, DynamicActivity.class)));
     }
 }

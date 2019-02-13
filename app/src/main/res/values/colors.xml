@@ -6,4 +6,7 @@
 
     <color name="red">#f00</color>
     <color name="black">#000</color>
+    <color name="pale_green">#d3ffce</color>
+    <color name="pale_red">#fa4a4e</color>
+    <color name="pale_blue">#66d4ff</color>
 </resources>
