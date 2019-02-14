@@ -6,7 +6,6 @@
     android:orientation="horizontal"
     tools:context=".fragments.FragmentActivity">
 
-
     <fragment
         android:id="@+id/test1_frag"
         android:name="com.sit.myfirstapp.fragments.Test1Fragment"

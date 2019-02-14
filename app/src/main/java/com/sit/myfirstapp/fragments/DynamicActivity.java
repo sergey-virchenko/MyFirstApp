@@ -10,7 +10,6 @@ import com.sit.myfirstapp.R;
 
 public class DynamicActivity extends AppCompatActivity {
 
-
     Dynamic1Fragment frag1;
     Dynamic2Fragment frag2;
     FragmentTransaction fTrans;

@@ -1,5 +1,7 @@
 package com.sit.myfirstapp.fragments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.SwitchCompat;
@@ -7,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.sit.myfirstapp.R;
 
@@ -50,6 +53,13 @@ public class Test2Fragment extends Fragment {
                 getChildFragmentManager().beginTransaction().remove(fragment).commit();
             }
         }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.
+                setTitle("Hello").
+                setMessage("Message in dialog").
+                setPositiveButton("Positive", (dialog, which) -> Toast.makeText(getActivity(), "On positive clicked", Toast.LENGTH_SHORT).show()).
+                setNegativeButton("Negative", (dialog, which) -> Toast.makeText(getActivity(), "On positive clicked", Toast.LENGTH_SHORT).show()).create().show();
     }
 
     public void setEvaluated(String s) {
