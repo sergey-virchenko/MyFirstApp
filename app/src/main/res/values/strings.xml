@@ -30,5 +30,6 @@
     <string name="replace">Replace</string>
     <string name="stack">Add to Back Stack</string>
     <string name="dynamic_fragments">Dynamic fragments</string>
+    <string name="broadcasts">Broadcasts</string>
 
 </resources>

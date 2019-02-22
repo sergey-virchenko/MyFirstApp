@@ -13,8 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <service
+            android:name=".broadcasts.BroadCastService"
+            android:enabled="true"
+            android:exported="true"></service>
 
-        <activity android:name=".fragments.DynamicActivity"/>
+        <activity android:name=".broadcasts.BroadCastReceiverActivity" />
+        <activity android:name=".fragments.DynamicActivity" />
         <activity android:name=".fragments.SecondFragmentActivity" />
         <activity android:name=".fragments.FragmentActivity" />
 
