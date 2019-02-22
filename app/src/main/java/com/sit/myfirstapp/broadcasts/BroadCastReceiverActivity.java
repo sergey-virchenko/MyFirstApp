@@ -43,7 +43,7 @@ public class BroadCastReceiverActivity extends AppCompatActivity {
     private BroadcastReceiver receiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            text.setText(intent.getIntExtra(CUSTOM_EXTRA, -1));
+            text.setText(String.valueOf(intent.getIntExtra(CUSTOM_EXTRA, -1)));
         }
     };
 }
