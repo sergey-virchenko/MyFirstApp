@@ -8,6 +8,7 @@ import com.sit.myfirstapp.R;
 
 public class FragmentActivity extends AppCompatActivity implements Test1Fragment.OnEvaluateListener {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

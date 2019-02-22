@@ -30,4 +30,28 @@
         android:layout_height="wrap_content"
         android:text="@string/dynamic_fragments" />
 
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#f00">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#0f0"
+            android:padding="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00f">
+
+
+            </FrameLayout>
+
+        </FrameLayout>
+    </FrameLayout>
+
 </LinearLayout>

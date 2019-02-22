@@ -35,12 +35,9 @@ public class FactorialActivity extends AppCompatActivity {
         progress = findViewById(R.id.progress);
         btnFastFactorial = findViewById(R.id.btnFastFactorial);
 
-        btnFastFactorial.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String inputString = input.getText().toString();
-                result.setText(factorial(new BigInteger(inputString)).toString());
-            }
+        btnFastFactorial.setOnClickListener(v -> {
+            String inputString = input.getText().toString();
+            result.setText(factorial(new BigInteger(inputString)).toString());
         });
 
     }

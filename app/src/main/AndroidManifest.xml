@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".fragments.DynamicActivity"></activity>
+
+        <activity android:name=".fragments.DynamicActivity"/>
         <activity android:name=".fragments.SecondFragmentActivity" />
         <activity android:name=".fragments.FragmentActivity" />
 
