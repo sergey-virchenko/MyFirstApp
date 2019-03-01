@@ -14,7 +14,9 @@ import com.sit.myfirstapp.R;
 public class BroadCastReceiverActivity extends AppCompatActivity {
 
     public static final String CUSTOM_ACTION = "com.sit.myfirstapp.CUSTOM_ACTION";
-    public static final String CUSTOM_EXTRA = "com.sit.myfirstapp.CUSTOM_EXTRA";
+    public static final String COMMAND = "com.sit.myfirstapp.COMMAND";
+    public static final String START = "1";
+    public static final String STOP = "2";
 
     private TextView text;
 
@@ -24,6 +26,8 @@ public class BroadCastReceiverActivity extends AppCompatActivity {
         setContentView(R.layout.activity_broad_cast_receiver);
 
         text = findViewById(R.id.text);
+        Intent i = new Intent(this, BroadCastService.class);
+        i.putExtra(COMMAND, START);
         startService(new Intent(this, BroadCastService.class));
     }
 
@@ -43,7 +47,7 @@ public class BroadCastReceiverActivity extends AppCompatActivity {
     private BroadcastReceiver receiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            text.setText(String.valueOf(intent.getIntExtra(CUSTOM_EXTRA, -1)));
+            text.setText(String.valueOf(intent.getIntExtra(COMMAND, -1)));
         }
     };
 }

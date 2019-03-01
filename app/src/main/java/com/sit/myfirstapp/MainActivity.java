@@ -87,8 +87,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        btnChangeColor.setOnClickListener(new B());
-
         btnChangeColor.setOnClickListener(v -> {
             changeBtnColor(btnChangeColor);
             changeBtnColor(btnChangeColor2);
