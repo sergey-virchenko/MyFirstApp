@@ -11,6 +11,7 @@ import com.sit.myfirstapp.broadcasts.BroadCastReceiverActivity;
 import com.sit.myfirstapp.broadcasts.MapsActivity;
 import com.sit.myfirstapp.fragments.DynamicActivity;
 import com.sit.myfirstapp.fragments.FragmentActivity;
+import com.sit.myfirstapp.lists.ListActivity;
 import com.sit.myfirstapp.networking.NetworkActivity;
 import com.sit.myfirstapp.sensors.CompassActivity;
 import com.sit.myfirstapp.sensors.SensorTestActivity;
@@ -24,7 +25,8 @@ public class StartActivity extends AppCompatActivity {
             R.id.dynamic_fragments,
             R.id.broadcasts,
             R.id.map,
-            R.id.net
+            R.id.net,
+            R.id.list
     };
 
     private static final Class[] names = {
@@ -34,7 +36,8 @@ public class StartActivity extends AppCompatActivity {
             DynamicActivity.class,
             BroadCastReceiverActivity.class,
             MapsActivity.class,
-            NetworkActivity.class
+            NetworkActivity.class,
+            ListActivity.class
     };
 
 
