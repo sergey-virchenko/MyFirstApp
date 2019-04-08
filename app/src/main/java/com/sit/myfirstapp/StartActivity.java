@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.sit.myfirstapp.broadcasts.BroadCastReceiverActivity;
 import com.sit.myfirstapp.broadcasts.MapsActivity;
+import com.sit.myfirstapp.fragmentpager.BottomNavigationActivity;
 import com.sit.myfirstapp.fragments.DynamicActivity;
 import com.sit.myfirstapp.fragments.FragmentActivity;
 import com.sit.myfirstapp.lists.ListActivity;
@@ -26,7 +27,8 @@ public class StartActivity extends AppCompatActivity {
             R.id.broadcasts,
             R.id.map,
             R.id.net,
-            R.id.list
+            R.id.list,
+            R.id.navigation
     };
 
     private static final Class[] names = {
@@ -37,7 +39,8 @@ public class StartActivity extends AppCompatActivity {
             BroadCastReceiverActivity.class,
             MapsActivity.class,
             NetworkActivity.class,
-            ListActivity.class
+            ListActivity.class,
+            BottomNavigationActivity.class
     };
 
 
