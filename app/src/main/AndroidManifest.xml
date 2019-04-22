@@ -18,10 +18,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".soundclick.ClickActivity"></activity>
         <activity
             android:name=".fragmentpager.BottomNavigationActivity"
-            android:label="@string/title_activity_bottom_navigation"></activity>
-        <activity android:name=".lists.ListActivity" />
+            android:label="@string/title_activity_bottom_navigation" />
+        <activity
+            android:name=".lists.ListActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".networking.NetworkActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

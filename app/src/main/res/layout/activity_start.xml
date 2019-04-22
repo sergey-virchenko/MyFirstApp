@@ -61,6 +61,12 @@
         android:layout_height="wrap_content"
         android:text="@string/navigation" />
 
+    <Button
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sound_click" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

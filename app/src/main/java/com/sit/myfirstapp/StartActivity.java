@@ -16,6 +16,7 @@ import com.sit.myfirstapp.lists.ListActivity;
 import com.sit.myfirstapp.networking.NetworkActivity;
 import com.sit.myfirstapp.sensors.CompassActivity;
 import com.sit.myfirstapp.sensors.SensorTestActivity;
+import com.sit.myfirstapp.soundclick.ClickActivity;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -28,7 +29,8 @@ public class StartActivity extends AppCompatActivity {
             R.id.map,
             R.id.net,
             R.id.list,
-            R.id.navigation
+            R.id.navigation,
+            R.id.click
     };
 
     private static final Class[] names = {
@@ -40,7 +42,8 @@ public class StartActivity extends AppCompatActivity {
             MapsActivity.class,
             NetworkActivity.class,
             ListActivity.class,
-            BottomNavigationActivity.class
+            BottomNavigationActivity.class,
+            ClickActivity.class
     };
 
 
